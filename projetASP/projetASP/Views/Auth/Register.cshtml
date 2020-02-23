@@ -1,0 +1,54 @@
+﻿
+@{
+    /**/
+
+    ViewBag.Title = "Register";
+}
+
+<h2 class="text-center" >Register</h2><br />
+@using (Html.BeginForm())
+{
+    <div style="display:flex; margin-left:20%">
+        <div>
+            <label>Nom : </label><br />
+            <input type="text" name="nom" class="form-control" /><br />
+            <label>Prenom : </label><br />
+            <input type="text" name="prenom" class="form-control" /><br />
+            <label>Email : </label><br />
+            <input type="email" name="email" class="form-control" /><br />
+            <label>Password : </label><br />
+            <input type="password" name="password" class="form-control" /><br />
+            <label>CNE : </label><br />
+            <input type="text" name="cne" class="form-control" /><br />
+            <label>CIN : </label><br />
+            <input type="text" name="cin" class="form-control" /><br />
+            <label>Date Naissance : </label><br />
+            <input type="date" name="date_naissance" class="form-control" /><br />
+        </div>
+        <div style="margin-left:30%">
+            <label>Filiere : </label><br />
+            <select name="filiere" class="form-control">
+                <option>Informatique</option>
+                <option>Industriel</option>
+                <option>Procedes</option>
+                <option>Reseaux</option>
+            </select><br />
+            <label>Tele : </label><br />
+            <input type="text" name="tele" class="form-control" /><br />
+            <label>Adress : </label><br />
+            <input type="text" name="adress" class="form-control" /><br />
+            <label>Ville : </label><br />
+            <input type="text" name="ville" class="form-control" /><br />
+            <label>Etablissement : </label><br />
+            <input type="text" name="prev_etablissement" class="form-control" /><br />
+            <label>Type Diplome : </label><br />
+            <input type="text" name="type_Diplome" class="form-control" /><br />
+            <label>Note : </label><br />
+            <input type="text" name="note" class="form-control" /><br />
+        </div>
+    </div>
+    <div class="row" style="margin-left:20%; margin-right:21%">
+        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+    </div>
+}
+

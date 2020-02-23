@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Profil";
+}
+
+<h2>Profil</h2>
+<style>
+    span{
+        font-weight:bold;
+    }
+</style>
+<div class="container">
+    <img src="~/Images/@Model.image" style="width:100px; height:100px" />
+    <div class="row">
+        <div class="col-6">
+            <span>Nom : </span>@Model.nom<br />
+            <span>Prenom : </span>@Model.prenom<br />
+            <span>Email : </span>@Model.email<br />
+            <span>Etablissement : </span>@Model.prev_etablissement<br />
+            <span>Diplome : </span>@Model.type_diplome<br />
+            <span>Note : </span>@Model.note<br />
+            <span>Filiere : </span>@Model.filiere<br />
+        </div>
+        <div class="col-6">
+            <span>Date de naissance : </span>@Model.date_naissance<br />
+        </div>
+    </div>
+</div>

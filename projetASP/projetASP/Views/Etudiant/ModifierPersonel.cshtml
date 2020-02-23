@@ -1,0 +1,40 @@
+﻿
+@{
+   ViewBag.Title = "ModifierPersonell";
+}
+
+<h2>Modifier Personell</h2>
+
+@using (Html.BeginForm())
+{
+    <label>Nom : </label><br />
+    <input type="text" name="nom" class="form-control" value=@Model.nom /><br />
+    <label>Prenom : </label><br />
+    <input type="text" name="prenom" class="form-control" value=@Model.prenom /><br />
+    <label>Email : </label><br />
+    <input type="email" name="email" class="form-control" value=@Model.email /><br />
+    <label>Password : </label><br />
+    <input type="password" name="password" class="form-control" value=@Model.password /><br />
+    <label>CNE : </label><br />
+    <input type="text" name="cne" class="form-control" value=@Model.cne /><br />
+    <label>CIN : </label><br />
+    <input type="text" name="cin" class="form-control" value=@Model.cin /><br />
+    <label>Date Naissance : </label><br />
+    <input type="date" name="date_naissance" class="form-control" value=@Model.date_naissance /><br />
+    <label>Filiere : </label><br />
+    <select name="filiere" class="form-control">
+        <option>Informatique</option>
+        <option>Industriel</option>
+        <option>Procedes</option>
+        <option>Reseaux</option>
+    </select><br />
+    <label>Tele : </label><br />
+    <input type="text" name="tele" class="form-control" value=@Model.tele /><br />
+    <label>Adress : </label><br />
+    <input type="text" name="adress" class="form-control" value=@Model.address /><br />
+    <label>Ville : </label><br />
+    <input type="text" name="ville" class="form-control" value=@Model.ville /><br />
+
+    <button type="submit" class="btn btn-primary">Edit</button>
+}
+

@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Home";
+}
+
+<h2>Home Admin</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.DropDownList("x", ViewBag.e as SelectList, "select lol");
+    <button type="submit" class="btn btn-primary">Submit</button>
+}
+

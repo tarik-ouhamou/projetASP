@@ -10,6 +10,10 @@ namespace projetASP.Models
     {
         public int id { get; set; }
         [Required]
+        public string nom { get; set; }
+        [Required]
+        public string prenom { get; set; }
+        [Required]
         public string cin { get; set; }
         [Required]
         public string cne { get; set; }
@@ -17,6 +21,7 @@ namespace projetASP.Models
         public string email { get; set; }
         [Required]
         public string password { get; set; }
+        public string image { get; set; }
         public DateTime date_naissance { get; set; }
         public string filiere { get; set; }
         public int tele { get; set; }

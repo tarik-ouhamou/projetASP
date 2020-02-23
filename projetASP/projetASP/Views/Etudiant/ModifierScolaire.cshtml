@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "ModifierScolaire";
+}
+
+<h2>ModifierScolaire</h2>
+@using (Html.BeginForm())
+{
+    <label>Etablissement : </label><br />
+    <input type="text" name="prev_etablissement" class="form-control" value=@Model.prev_etablissement /><br />
+    <label>Type Diplome : </label><br />
+    <input type="text" name="type_diplome" class="form-control" value=@Model.type_diplome /><br />
+    <label>Note : </label><br />
+    <input type="text" name="note" class="form-control" value=@Model.note /><br />
+    <button type="submit" class="btn btn-primary">Edit</button>
+}
